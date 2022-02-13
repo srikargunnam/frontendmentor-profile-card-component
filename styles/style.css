@@ -1,0 +1,250 @@
+html {
+  overflow: hidden;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  font-size: 62.5%;
+  background: #19a2ae;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .bg-pattern-top {
+  position: absolute;
+  left: -200%;
+  top: -75%;
+  z-index: -1;
+}
+
+body .card {
+  width: min(90%, 20rem);
+  height: min(85%, 22rem);
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+body .card .images {
+  width: 100%;
+  height: 50%;
+}
+
+body .card .images .bg-pattern-card {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 8rem;
+  width: auto;
+}
+
+body .card .images .profile {
+  width: 5rem;
+  height: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 0.4rem white;
+          box-shadow: 0 0 0 0.4rem white;
+}
+
+body .card .header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+body .card .header .user-name {
+  color: #2d3248;
+  margin: 0;
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+  font-size: 1.125rem;
+}
+
+body .card .header .user-age {
+  color: #6a6f81;
+  padding-left: 0.3rem;
+  font-weight: 400;
+}
+
+body .card .header .user-location {
+  color: #969696;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+
+body .card .stats {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 1.5rem;
+  border-top: 0.1rem solid #ddd;
+}
+
+body .card .stats div {
+  text-align: center;
+}
+
+body .card .stats div h2 {
+  margin: 0;
+  color: #2d3248;
+  font-weight: 700;
+  font-size: 1.125rem;
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+}
+
+body .card .stats div p {
+  margin: 0;
+  padding-top: 0.2rem;
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: #969696;
+  letter-spacing: 0.1rem;
+}
+
+body .bg-pattern-bottom {
+  position: absolute;
+  right: -200%;
+  bottom: -75%;
+  z-index: -1;
+}
+
+body .attribution {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  color: white;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+body .attribution a {
+  color: white;
+}
+
+@media only screen and (min-width: 23.5rem) {
+  body .bg-pattern-top {
+    position: absolute;
+    left: -15%;
+    top: -50%;
+    z-index: -1;
+  }
+  body .bg-pattern-top img {
+    width: 60vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  body .card {
+    width: min(90%, 28rem);
+    height: min(85%, 30rem);
+  }
+  body .card .images {
+    width: 100%;
+    height: 50%;
+  }
+  body .card .images .bg-pattern-card {
+    height: 11.5rem;
+    width: auto;
+  }
+  body .card .images .profile {
+    width: 7rem;
+    height: auto;
+    top: 50%;
+    -webkit-box-shadow: 0 0 0 0.4rem white;
+            box-shadow: 0 0 0 0.4rem white;
+  }
+  body .card .header {
+    padding: 1.5rem;
+  }
+  body .card .header .user-name {
+    font-size: 1.5rem;
+  }
+  body .card .header .user-location {
+    color: #969696;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+  }
+  body .card .stats {
+    padding-top: 2rem;
+    border-top: 0.1rem solid #ddd;
+  }
+  body .card .stats div {
+    text-align: center;
+  }
+  body .card .stats div h2 {
+    margin: 0;
+    color: #2d3248;
+    font-weight: 700;
+    font-size: 1.5rem;
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+  }
+  body .card .stats div p {
+    margin: 0;
+    padding-top: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #969696;
+    letter-spacing: 0.1rem;
+  }
+  body .bg-pattern-bottom {
+    position: absolute;
+    right: -15%;
+    bottom: -55%;
+    z-index: -1;
+  }
+  body .bg-pattern-bottom img {
+    width: 60vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+/*# sourceMappingURL=style.css.map */
